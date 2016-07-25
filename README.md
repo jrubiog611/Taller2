@@ -1,3 +1,3 @@
 # Taller2
 Proyectos y weas
-pene.
+Juan Felipe Rubio Guerra, grupo martes jueves 8am - 10am
