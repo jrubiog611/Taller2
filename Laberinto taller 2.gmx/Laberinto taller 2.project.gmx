@@ -23,8 +23,11 @@
       <sprite>sprites\sprllaveamarilla</sprite>
       <sprite>sprites\sprllaveroja</sprite>
       <sprite>sprites\sprllaveazul</sprite>
+      <sprite>sprites\sprllavenegra</sprite>
+      <sprite>sprites\sprllaveplata</sprite>
     </sprites>
     <sprites name="grouppuertas">
+      <sprite>sprites\sprpuertabloqueada</sprite>
       <sprite>sprites\sprpuertaazul</sprite>
       <sprite>sprites\sprpuertaroja</sprite>
       <sprite>sprites\sprpuertaamarilla</sprite>
@@ -36,6 +39,7 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\objpuertabloqueada</object>
     <object>objects\objdiamond</object>
     <object>objects\objemeta</object>
     <object>objects\objpuerta</object>
@@ -49,6 +53,13 @@
       <object>objects\objllaveamarilla</object>
       <object>objects\objllaveroja</object>
       <object>objects\objllaveazul</object>
+      <object>objects\objllavenegra</object>
+      <object>objects\objllaveplata_1</object>
+      <object>objects\objllaveplata_2</object>
+      <object>objects\objllaveplata_3</object>
+      <object>objects\objllavenegra_1</object>
+      <object>objects\objllavenegra_2</object>
+      <object>objects\objllaveplata</object>
     </objects>
     <objects name="grouppuertas">
       <object>objects\objpuertaazul</object>
@@ -63,6 +74,7 @@
     <room>rooms\nivel_1</room>
     <room>rooms\nivel_2</room>
     <room>rooms\nivel_3</room>
+    <room>rooms\nivel_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

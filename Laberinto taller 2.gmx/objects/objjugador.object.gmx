@@ -25,11 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Velocidad = 6;
+            <string>Velocidad = 5;
 
 llaveroja = false;
 llaveazul = false;
 llaveamarilla = false;
+llavenegra = false;
+llaveplata = false;
+llavenegra_1 = false;
+llavenegra_2 = false;
+llaveplata_1 = false;
+llaveplata_2 = false;
+llaveplata_3= false;
 </string>
           </argument>
         </arguments>
@@ -116,6 +123,56 @@ if (place_meeting(x,y, objllaveamarilla))
    llaveamarilla = true;
    audio_play_sound(snddiamond, 10, false);
    }
+   
+if (place_meeting(x,y, objllaveplata))
+   {
+   with(objllaveplata){instance_destroy();}
+   llaveplata = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+   
+if (place_meeting(x,y, objllaveplata_1))
+   {
+   with(objllaveplata_1){instance_destroy();}
+   llaveplata_1 = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+   
+if (place_meeting(x,y, objllaveplata_2))
+   {
+   with(objllaveplata_2){instance_destroy();}
+   llaveplata_2 = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+    
+if (place_meeting(x,y, objllaveplata_3))
+   {
+   with(objllaveplata_3){instance_destroy();}
+   llaveplata_3 = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+   
+    
+if (place_meeting(x,y, objllavenegra))
+   {
+   with(objllavenegra){instance_destroy();}
+   llavenegra = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+   
+if (place_meeting(x,y, objllavenegra_1))
+   {
+   with(objllavenegra_1){instance_destroy();}
+   llavenegra_1 = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
+  
+if (place_meeting(x,y, objllavenegra_2))
+   {
+   with(objllavenegra_2){instance_destroy();}
+   llavenegra_2 = true;
+   audio_play_sound(snddiamond, 10, false);
+   }
 </string>
           </argument>
         </arguments>
@@ -171,6 +228,18 @@ if(llaveamarilla)
   (place_meeting(x,y+Velocidad, objpuertaamarilla))
       {  
       with(objpuertaamarilla){instance_destroy();}
+      audio_play_sound(sndpuerta, 10, false);
+      }      
+  }
+  
+if(llaveplata_1)&amp;&amp; (llaveplata_2)&amp;&amp; (llaveplata_3)&amp;&amp; (llavenegra_1)&amp;&amp; (llavenegra_2)
+  {
+  if(place_meeting(x+Velocidad, y, objpuertabloqueada))||
+  (place_meeting(x-Velocidad, y, objpuertabloqueada))||
+  (place_meeting(x,y-Velocidad, objpuertabloqueada))||
+  (place_meeting(x,y+Velocidad, objpuertabloqueada))
+      {  
+      with(objpuertabloqueada){instance_destroy();}
       audio_play_sound(sndpuerta, 10, false);
       }      
   }
